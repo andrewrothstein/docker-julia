@@ -1,8 +1,10 @@
 FROM andrewrothstein/docker-ansible:centos_7.1.1503
 MAINTAINER Andrew Rothstein <andrew.rothstein@gmail.com>
 
-ADD requirements.yml requirements.yml
-RUN ansible-galaxy install -r requirements.yml
+ENV DOCKERJULIA_REQUIREMENTS dockerjulia_requirements.yml
+ADD requirements.yml $DOCKERJULIA_REQUIREMENTS
+RUN ansible-galaxy install -r $DOCKERJULIA_REQUIREMENTS
 
-ADD playbook.yml playbook.yml
-RUN ansible-playbook playbook.yml
+ENV DOCKERJULIA_PLAYBOOK dockerjulia_playbook.yml
+ADD playbook.yml $DOCKERJULIA_PLAYBOOK
+RUN ansible-playbook $DOCKERJULIA_PLAYBOOK
