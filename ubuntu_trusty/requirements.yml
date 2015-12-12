@@ -1,3 +1,6 @@
 ---
 - src: andrewrothstein.proxify
 - src: andrewrothstein.julia
+- src: andrewrothstein.python
+- src: andrewrothstein.anaconda
+  

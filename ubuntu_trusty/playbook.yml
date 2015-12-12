@@ -3,3 +3,5 @@
   roles:
     - andrewrothstein.proxify
     - andrewrothstein.julia
+    - andrewrothstein.python
+    - andrewrothstein.anaconda
