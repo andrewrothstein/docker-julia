@@ -4,5 +4,5 @@
     - andrewrothstein.proxify
     - andrewrothstein.julia
     - andrewrothstein.python
-    - andrewrothstein.anaconda
+    - { role: 'andrewrothstein.anaconda', anaconda_make_sys_default : True }
     - andrewrothstein.node-n
