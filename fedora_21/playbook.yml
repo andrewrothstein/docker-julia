@@ -6,3 +6,4 @@
     - andrewrothstein.python
     - { role: 'andrewrothstein.anaconda', anaconda_make_sys_default : True }
     - andrewrothstein.node-n
+    - andrewrothstein.r
