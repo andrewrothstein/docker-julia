@@ -1,4 +1,4 @@
-FROM andrewrothstein/docker-ansible:centos_7.1.1503
+FROM andrewrothstein/docker-ansible:ubuntu_trusty
 MAINTAINER Andrew Rothstein <andrew.rothstein@gmail.com>
 
 ENV DOCKERJULIA_REQUIREMENTS dockerjulia_requirements.yml
